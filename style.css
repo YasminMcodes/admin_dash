@@ -1,0 +1,268 @@
+.list-1,
+.list-2 {
+    list-style: none;
+    padding: 0;
+}
+.list-1 li,
+.list-2 li {
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 18px;
+    padding-left: 30px;
+    
+}
+li .span {
+
+}
+
+.home-item {
+    background-image: url("./icons/home-custom.png");
+}
+.profile-item {
+    background-image: url("./icons/account-box-outline-custom.png");
+}
+.messages-item {
+    background-image: url("./icons/message-reply-custom.png");
+}
+.history-item{
+    background-image: url("./icons/clock-time-nine-custom.png");
+}
+.tasks-item{
+    background-image: url("./icons/file-multiple-custom.png");
+}
+.communities-item{
+    background-image: url("./icons/account-group-custom.png");
+}
+.settings-item{
+    background-image: url("./icons/cog-custom.png") ;
+}
+.support-item{
+    background-image: url("./icons/help-box-custom.png");
+}
+.privacy-item {
+    background-image: url("./icons/shield-check-custom.png");
+}
+
+.dashboard-icon {
+      background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 22px;
+    padding-left: 30px;
+    background-image:url("./icons/view-dashboard-outline-custom.png") ;
+}
+
+
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+}
+.header {
+    grid-column: 2/3;
+    grid-row: 1;
+    background-color: white;
+    display: grid;
+    grid-template-columns: auto ;
+    gap: 20px;
+    padding: 20px 40px;
+    align-items: center;
+}
+.header-top{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+.header-bottom {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+.greeting-text p{
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin: 0;
+}
+.greeting-text h3{
+    font-size: 1.3rem;
+    margin: 0;
+}
+.action-buttons{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 20px;
+}
+.user-avatar-small,
+.avatar-small{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.btn {
+    background-color: #1992d4;
+    color: wheat;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.search-input {
+    width:60%;
+    background-color: #e3e8f0;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 15px;
+    outline: none;
+    margin-left: 10px; 
+   
+}
+.user-menu {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+}
+
+
+.sidebar {
+    grid-column: 1;
+    grid-row: 1/3;
+    background-color: #1992d4;
+    color: white;
+    padding: 20px;
+}
+.main-content{
+    background-color: #e2e8f0;
+     padding: 8px;
+    overflow-y: auto;
+}
+.main-grid{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 10px;
+    max-width: 1400px;
+}
+.section-title {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 1.5rem;
+}
+.card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5re;
+    box-sizing: 0 2px 4px rgba(0,0,0,0.o5);
+}
+.project-card {
+    border-left: 8px solid #f6c23e;
+    display: grid;
+    grid-template-rows: 1fr auto ;
+    gap: 1rem;
+    height: 100%;
+    padding: 5px;
+}
+.project-card h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.project-card p {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+.card-icons {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: end;
+    gap: 1rem;
+    font-size: 1.2rem;
+}
+.sidebar-widget {
+    display: grid;
+    gap: 2rem;
+    align-content: start;
+}
+.announcement-card{
+    display: grid;
+    align-content: center;
+    gap: 1rem;
+    padding: 10px;
+}
+.announcement-item h5 {
+    margin: 0 0 5px 0;
+    font-size: 0.9rem;
+}
+.announcement-item p {
+    font-size: 0.75rem;
+    color: #666;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.announcement-card hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 0; /* Let grid gap handle the spacing */
+    width: 100%;
+}
+
+/* Trending */
+.trending-card {
+    /* REPLACED FLEX WITH GRID */
+    display: grid;
+    gap: 1rem;
+}
+
+.trend-item {
+    /* REPLACED FLEX WITH GRID */
+    display: grid;
+    /* Col 1: Avatar (auto size), Col 2: Text (takes rest) */
+    grid-template-columns: auto 1fr;
+    gap: 15px; /* Space between avatar and text */
+    align-items: center; /* Vertically center avatar with text */
+}
+
+.trend-item p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.trend-item small {
+    color: #666;
+}
+
+.sidebar{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 3rem;
+
+}
+
+.navigationcontainer {
+    display: grid;
+    align-content: start; /* Keeps items at the top, doesn't stretch them */
+    gap: 3.5rem; /* This creates the BIG GAP between Communities and Settings */
+}
+
+.list-1,.list-2{
+   
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    
+    /* Internal Grid for the list items spacing */
+    display: grid;
+    gap: 1.2rem; /* Space between individual links (e.g., Home and Profile) */
+
+}
